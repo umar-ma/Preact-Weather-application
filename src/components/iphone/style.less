@@ -1,0 +1,353 @@
+@import '~style/helpers';
+
+// container styles
+.container {
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/first.jpg');
+	color: #fff;
+	width: 414px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	font-family: 'Franklin Gothic Medium';
+	overflow-y: hidden;
+}
+
+// container main styles (pages)
+.container main {
+	height: 736px;
+}
+
+// header styles
+.header {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+//details styles
+.details {
+	flex: 4;
+}
+
+//city font styles
+.city {
+	flex: 1;
+	font-size: 1.7em;
+	font-weight: 400;
+}
+
+//conditions container
+.conditions {
+	flex: 1;
+	font-size: 1em;
+}
+
+//temperature text
+.temperature {
+	flex: 2;
+	margin-top: 0;
+	font-size: 4.8em;
+	font-weight: 300;
+	letter-spacing: -12px;
+}
+
+// filled after pseudo element
+.filled:after {
+	content: "°";
+	margin: 0 0 0 1rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+//title large text style
+.title {
+	font-size: xx-large;
+	text-align: left;
+	margin: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+//title button to fit width and height
+.title button {
+	width: fit-content;
+	height: fit-content;
+}
+
+//temp text style 
+.temp {
+	font-size: 5em;
+	color: white;
+	margin: 0;
+	padding: 0;
+
+}
+
+//location style 
+.loc {
+	font-size: 3em;
+	color: white;
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+
+	//p inside location text style
+	p {
+		color: purple;
+		font-size: 0.5em;
+		margin-top: 0;
+		padding-top: 0;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+}
+
+
+//details div
+.details {
+	font-size: 1em;
+	color: purple;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+//weather icon with no padding or margin TOP
+.weatherIcon {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+
+// locations wtyle with 0 padding and margin
+.locations {
+	margin: 0;
+	padding: 0;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	border: solid rgb(25, 0, 255) 0.05rem;
+	border-radius: 25px;
+	background-color: darkblue;
+}
+
+//divs inside locations container
+.locations div {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+//forecast location container
+.forecast {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 0.05rem solid whitesmoke;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	overflow-x: scroll;
+	backdrop-filter: blur(10px);
+}
+
+//forecast item style
+.forecast_item {
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem;
+
+	//span first child with border and margin bottom
+	span:first-child {
+		border-bottom: 0.05rem solid #fff;
+		margin-bottom: 1rem;
+	}
+}
+
+//bottom class with the following styles
+.bottom {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	bottom: 0px;
+	position: absolute;
+	width: 100%;
+}
+
+//anchor tags inside bottom class
+.bottom a {
+	width: 100%;
+	display: block;
+	background: skyblue;
+	font-weight: 100;
+	transition: all 0.3s ease-in-out;
+	height: 3rem;
+	cursor: pointer;
+}
+
+//hover style of anchor tags inside bottom class
+.bottom a:hover {
+	background-color: #6DA4CC;
+}
+
+//direct img child of anchor tags inside bottom calss
+.bottom a>img {
+	width: 100%;
+	height: 100%;
+}
+
+//*************** START page scroll bars customizations ***************
+::-webkit-scrollbar {
+	height: 0.6rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 1rem grey;
+	border-radius: 0.5rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: red;
+	border-radius: 0.5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #b30000;
+}
+
+//*************** END page scroll bars customizations ***************
+
+//settings dropdown style
+.dropdown {
+	display: none;
+	color: white;
+	flex-direction: column;
+}
+
+//changer div
+.changer {
+	display: flex;
+	flex-direction: column;
+
+	button {
+		width: fit-content;
+		height: fit-content;
+	}
+}
+
+//setting 38px with and height
+.settings {
+	width: 38px;
+	height: 38px;
+}
+
+//p2title class with xxlarge size
+.p2title {
+	font-size: xx-large;
+	font-weight: bolder;
+	color: #0c68a9;
+}
+
+// message div with no padding and margin and 2rem inline margin
+.message {
+	margin: 0;
+	padding: 0;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.messagest {
+	margin: 1rem;
+	margin-bottom: 0;
+}
+
+//message image 6rem width height
+.messageimg {
+	margin: 2rem;
+	width: 6rem;
+	height: 6rem;
+}
+
+//flex search container 
+.search {
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+//flex column search dropdown
+.searchdropdown {
+	display: flex;
+	flex-direction: column;
+}
+
+//search input height
+.searchinput {
+	height: 1rem;
+}
+
+//messagest class wth border, radius and bg color
+.messagest {
+	border: solid rgb(25, 0, 255) 0.05rem;
+	border-radius: 25px;
+	background-color: darkblue;
+}
+
+//info icons with 40px with and height
+.infoicons {
+	width: 40px;
+	height: 40px;
+	float: right;
+	margin-top: 15px;
+}
+
+//extra info class style
+.extrainfo {
+	margin: 5%;
+	padding: 5%;
+	text-align: left;
+	backdrop-filter: blur(10px);
+	color: whitesmoke;
+	border: whitesmoke;
+	border-radius: 25px;
+	border-style: solid;
+}
+
+//flex sun class
+.sun {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 3rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+
+	//flex column to all divs inside the sun class
+	div {
+		display: flex;
+		flex-direction: column;
+
+		//4rem width and height to all img tag inside div
+		img {
+			width: 4rem;
+			height: 4rem;
+		}
+
+	}
+
+}
